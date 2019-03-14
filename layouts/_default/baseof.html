@@ -69,7 +69,8 @@
     {{ .Hugo.Generator }}
   </head>
 
-  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}">
+  <body class="{{ if .Site.Params.rtl }}rtl{{ end }} {{ if .Site.Params.inverted }}inverted{{ end }}"
+        style="background-image: url({{ .Site.Params.background }})">
     <main class="wrapper">
       {{ partial "header.html" . }}
 
